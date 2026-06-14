@@ -21,16 +21,16 @@ spec:
             - containerPort: 5000
           env:
             - name: DB_HOST
-              value: mysql-service
+              value: student.caxuyq6oov2w.us-east-1.rds.amazonaws.com
             - name: DB_USER
-              value: root
+              value: admin
             - name: DB_PASSWORD
-              valueFrom:
+              valueFrom: prasad212
                 secretKeyRef:
                   name: mysql-secret
                   key: MYSQL_ROOT_PASSWORD
             - name: DB_NAME
-              value: studentdb
+              value: student
 ---
 apiVersion: v1
 kind: Service
