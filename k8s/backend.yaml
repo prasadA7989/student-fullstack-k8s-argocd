@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: student-backend
-          image: ghcr.io/prasadA7989/student-backend:latest
+          image: ghcr.io/prasada7989/student-backend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
